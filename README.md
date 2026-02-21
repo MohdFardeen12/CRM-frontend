@@ -6,6 +6,9 @@ This is a CRM system built using the MERN stack (MongoDB, Express.js, React.js, 
 • Admin Panel – For managing employees, access levels, and viewing all leads.
 • User Panel – For employees to create leads and view their own leads.
 
+# Note
+● The first user you will login will be the default admin of CRM. After once, everyone will signup as user or employee only. Admin can give access of admin to other employees later.
+
 # Features
 🡪 Admin Panel
 • Access Level Management: Admins can assign roles and permissions to employees.
