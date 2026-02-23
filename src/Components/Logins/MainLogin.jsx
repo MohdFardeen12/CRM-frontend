@@ -25,7 +25,7 @@ const Mainlogin = () => {
     designation: "",
     reportingManager: "",
     department: "",
-    photo: null,
+    // photo: null,
   });
 
   /* ---------------- LOGIN HANDLER ---------------- */
@@ -244,14 +244,14 @@ const Mainlogin = () => {
                   onChange={(e)=>setSignupData({...signupData,department:e.target.value})}/>
               </div>
 
-              <div>
+              {/* <div>
                 <label className="block text-sm font-medium mb-1">
                   Upload Photo
                 </label>
                 <input type="file"
                   name="photo"
                   onChange={(e)=>setSignupData({...signupData,photo:e.target.files[0]})}/>
-              </div>
+              </div> */}
 
               <button className="w-full bg-linear-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-lg font-semibold">
                 Create Account
