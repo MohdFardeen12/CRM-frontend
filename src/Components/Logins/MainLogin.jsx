@@ -32,7 +32,7 @@ const Mainlogin = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await API.post("/auth/signin", loginData);
+      const res = await API.post("/api/auth/signin", loginData);
 
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
@@ -64,7 +64,7 @@ const Mainlogin = () => {
     // });
 
     try {
-      await API.post("/auth/signup", formData);
+      await API.post("/api/auth/signup", formData);
 
       // await API.post("/auth/signup", formData, {
       //   headers: { "Content-Type": "multipart/form-data" },
