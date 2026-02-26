@@ -51,25 +51,10 @@ const Mainlogin = () => {
   /* ---------------- SIGNUP HANDLER ---------------- */
   const handleSignup = async (e) => {
     e.preventDefault();
-
-    const formData = new FormData();
-    Object.entries(signupData).forEach(([key, value]) => {
-      if (value !== null && value !== "") {
-      formData.append(key, value);
-      }
-    });
-    // const formData = new FormData();
-    // Object.keys(signupData).forEach((key) => {
-    //   formData.append(key, signupData[key]);
-    // });
-
+  
     try {
-      await API.post("/api/auth/signup", formData);
-
-      // await API.post("/auth/signup", formData, {
-      //   headers: { "Content-Type": "multipart/form-data" },
-      // });
-
+      await API.post("/api/auth/signup", signupData);
+  
       alert("Account created successfully");
       setActiveTab("login");
     } catch (err) {
