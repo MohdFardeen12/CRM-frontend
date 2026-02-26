@@ -30,7 +30,7 @@ const CreateOpportunity = () => {
       const token = localStorage.getItem("token");
 
       await API.post(
-        "/opportunity/create",
+        "/api/opportunity/create",
         formData,
         {
           headers: {
